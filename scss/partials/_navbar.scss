@@ -1,0 +1,58 @@
+
+// Navbar
+
+nav {
+  display: flex;
+  justify-content: left; 
+  background: #f8f8f8;
+  scroll-snap-align: start;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 10px;
+    
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: #afafaf;
+  }
+
+  nav ul li a:hover{
+    text-decoration: none;
+    color: #000;
+  }
+
+  nav .current{
+    text-decoration: none;
+    color: #000
+  }
+
+  // Navbar - Media Queries
+
+  // @media screen and (max-width: 1600px) {
+
+  // }
+  
+  @media screen and (max-width: 1024px) {
+  
+    nav {
+      justify-content: center; 
+    }
+      
+  }
+  
+  // @media screen and (max-width: 768px) { 
+  
+  // }
+  
+  // @media screen and (max-width: 480px) {
+     
+  // }

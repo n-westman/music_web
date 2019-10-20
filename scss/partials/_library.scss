@@ -1,0 +1,64 @@
+
+
+// More music library
+
+main .library {
+    background-image: url('../src/malika_favre_img2.jpg');
+    color: #f8f8f8;
+    height: 800px;
+    margin: 0px 100px 0px 100px;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+    scroll-snap-align: start; 
+    background-size: cover;
+    background-position-y: 50%;
+  }
+
+main .library h3 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+main .library iframe {
+  text-align: center; 
+  padding: 20px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 3px;
+  background-color: #f8f8f8;
+} 
+
+
+// @media screen and (max-width: 1600px) {
+
+    
+    
+// }
+
+@media screen and (max-width: 1024px) {
+
+  main .library{
+    background-size: auto;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  main .library{
+    margin: 0px 20px 0px 20px;
+    height: 600px;  
+  }
+
+  main .library h3 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+}
+
+// @media screen and (max-width: 480px) {
+
+    
+// }

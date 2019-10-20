@@ -1,0 +1,88 @@
+
+// Main Column 
+  
+main .topchoice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    padding: 70px;
+    scroll-snap-align: start;
+  }
+  
+  main .topchoice a {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-size: cover;
+    box-shadow: 0px 0px 8px #888888;
+    color: #c7c7c7;
+  }
+
+  main .topchoice a p {
+    margin-top: -30px;
+  }
+
+  main .topchoice a:hover {
+    box-shadow: 0px 0px 0px #888888;
+    color: #000;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+// Images
+
+  main .topchoice #imageOne {
+    background-image: url('../src/malika_serenity.gif');
+  }
+
+
+  main .topchoice #imageTwo {
+    background-image: url('../src/malika_outlaws.gif');
+  }
+
+  main .topchoice #imageThree {
+    background-image: url('../src/malika_holdmetight.gif');
+  }
+
+  main .topchoice #imageFour {
+    background-image: url('../src/malika_phenomena.gif');
+  }
+
+  main .topchoice #imageFive {
+    background-image: url('../src/unknown_reminiscence.gif');
+  }
+
+  main .topchoice #imageSix {
+    background-image: url('../src/unknown_reverberation.gif');
+  }
+
+// TopChoice - Media Queries
+
+// @media screen and (max-width: 1600px) {
+
+    
+    
+// }
+
+// @media screen and (max-width: 1024px) {
+
+    
+// }
+
+@media screen and (max-width: 768px) {
+
+  main .topchoice {
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+}
+
+// @media screen and (max-width: 480px) {
+
+    
+// }

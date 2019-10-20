@@ -1,0 +1,362 @@
+nav {
+  display: flex;
+  justify-content: left;
+  background: #f8f8f8;
+  scroll-snap-align: start;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #afafaf;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+nav .current {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    justify-content: center;
+  }
+}
+header {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: #f8f8f8;
+  text-align: center;
+  scroll-snap-type: y mandatory;
+}
+
+header img {
+  margin: -10px;
+  width: 10%;
+}
+
+header h1 {
+  font-size: 2vw;
+  color: #202020;
+  margin: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  header img {
+    margin: -5px;
+    width: 15%;
+  }
+
+  header h1 {
+    font-size: 2.2vw;
+    color: #202020;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding-bottom: 20px;
+  }
+
+  header img {
+    margin: 0px;
+    width: 20%;
+  }
+
+  header h1 {
+    font-size: 4vw;
+    color: #202020;
+    margin: 20px;
+  }
+}
+main .topchoice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  padding: 70px;
+  scroll-snap-align: start;
+}
+
+main .topchoice a {
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  background-size: cover;
+  box-shadow: 0px 0px 8px #888888;
+  color: #c7c7c7;
+}
+
+main .topchoice a p {
+  margin-top: -30px;
+}
+
+main .topchoice a:hover {
+  box-shadow: 0px 0px 0px #888888;
+  color: #000;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main .topchoice #imageOne {
+  background-image: url("../src/malika_serenity.gif");
+}
+
+main .topchoice #imageTwo {
+  background-image: url("../src/malika_outlaws.gif");
+}
+
+main .topchoice #imageThree {
+  background-image: url("../src/malika_holdmetight.gif");
+}
+
+main .topchoice #imageFour {
+  background-image: url("../src/malika_phenomena.gif");
+}
+
+main .topchoice #imageFive {
+  background-image: url("../src/unknown_reminiscence.gif");
+}
+
+main .topchoice #imageSix {
+  background-image: url("../src/unknown_reverberation.gif");
+}
+
+@media screen and (max-width: 768px) {
+  main .topchoice {
+    margin-top: 30px;
+    padding: 10px;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 70px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.modal-content {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 15%;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 90%;
+}
+
+.modal-content h2 {
+  margin-top: 5%;
+}
+
+.modal-content p {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.2s;
+  animation-name: zoom;
+  animation-duration: 0.2s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+  .modal-content {
+    height: 70%;
+  }
+
+  .modal-content iframe {
+    width: 100%;
+    height: 70%;
+  }
+
+  .modal-content p {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .modal-content {
+    height: 70%;
+  }
+
+  .modal-content iframe {
+    width: 100%;
+    height: 60%;
+  }
+
+  .modal-content p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+main .library {
+  background-image: url("../src/malika_favre_img2.jpg");
+  color: #f8f8f8;
+  height: 800px;
+  margin: 0px 100px 0px 100px;
+  border-radius: 15px 15px 15px 15px;
+  text-align: center;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+main .library h3 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+main .library iframe {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 3px;
+  background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 1024px) {
+  main .library {
+    background-size: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .library {
+    margin: 0px 20px 0px 20px;
+    height: 600px;
+  }
+
+  main .library h3 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  scroll-snap-align: start;
+}
+
+.aboutMain {
+  display: block;
+  text-align: center;
+  margin: 10% 35%;
+}
+
+.aboutFooter {
+  position: relative;
+  bottom: 0;
+  height: 4.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutMain {
+    display: block;
+    text-align: center;
+    margin: 5% 15%;
+  }
+
+  .aboutFooter {
+    position: relative;
+    bottom: 0;
+    height: 14.5rem;
+  }
+}
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 16px;
+  display: block;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

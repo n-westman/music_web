@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Westman Music</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+
+        <img src="src/wm_black.png" alt="Westman Music logotype">  
+
+        <h1>
+            Welcome to a prototype of my music library. <br />
+            Listed below is my top music pick from my years of producing.
+        </h1>
+
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+
+      <!-- MAIN TOP MUSIC SECTION -->
+        <section class="topchoice">
+          <!-- Modal link 1 -->
+          <a class="openmodal myBtn" id="imageOne"><p>Serenity</p></a>
+
+            <!-- The Modal -->
+            <div class="modal myModal" >
+          
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                  <iframe
+                  src="https://www.youtube.com/embed/dVvFAvP3lR8" 
+                  frameborder="0" allow="accelerometer; 
+                  encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe> 
+
+                <!-- From text.js array -->
+                <h2 id="firstOne"></h2>
+                <p id="firstTwo"></p>
+
+              </div>
+            </div>
+
+          <!-- Modal link 2 -->
+          <a class="openmodal myBtn" id="imageTwo"><p>Outlaws</p></a>
+            <!-- The Modal -->
+            <div class="modal myModal">
+          
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                  
+                  <iframe
+                  src="https://www.youtube.com/embed/JeoMmm0Kclk" frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                  picture-in-picture" allowfullscreen></iframe>
+
+                  <!-- From text.js array -->
+                  <h2 id="secondOne"></h2>
+                  <p id="secondTwo"></p> 
+
+              </div>
+            </div>
+
+          <!-- Modal link 3 -->
+          <a class="openmodal myBtn" id="imageThree"><p>Hold Me Tight</p></a>
+          
+            <!-- The Modal -->
+            <div class="modal myModal">
+          
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                  <iframe
+                  src="https://www.youtube.com/embed/RZvR5Ql42dQ" frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                  picture-in-picture" allowfullscreen></iframe>
+
+                  <!-- From text.js array -->
+                  <h2 id="thirdOne"></h2>
+                  <p id="thirdTwo"></p>
+                  
+              </div> 
+            </div>
+          
+          <!-- Modal link 4 -->
+          <a class="openmodal myBtn" id="imageFour"><p>Phenomena</p></a>
+          
+            <!-- The Modal -->
+            <div class="modal myModal">
+          
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                  <iframe
+                  src="https://www.youtube.com/embed/aJnM0TjjkPI" frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                  picture-in-picture" allowfullscreen></iframe>
+
+                  <h2 id="fourOne"></h2>
+                  <p id="fourTwo"></p> 
+
+              </div>
+            </div>
+          
+          <!-- Modal link 5 -->
+          <a class="openmodal myBtn" id="imageFive"><p>Reminiscence</p></a>
+          
+            <!-- The Modal -->
+            <div class="modal myModal">
+          
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                  <iframe
+                  src="https://www.youtube.com/embed/8d7ywISTugM" frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                  picture-in-picture" allowfullscreen></iframe>
+                  
+                  <h2 id="fiveOne"></h2>
+                  <p id="fiveTwo"></p> 
+
+              </div>
+            </div>
+
+          <!-- Modal link 6 -->  
+          <a class="openmodal myBtn" id="imageSix"><p>Reverberation</p></a>
+          
+            <!-- The Modal -->
+            <div class="modal myModal">
+          
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                  
+                  <iframe
+                  src="https://www.youtube.com/embed/rgWm0-a0kAo" frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                  picture-in-picture" allowfullscreen></iframe>
+
+                  <h2 id="sixOne"></h2>
+                  <p id="sixTwo"></p>
+
+              </div>
+            </div>
+
+        </section>
+
+        <!-- MAIN LIBRARY SECTION -->
+        <section class="library">
+            <h3>
+            More music <br />
+            through the years.
+            </h3>
+
+            <!-- SOUNDCLOUD IFRAMES -->
+            <iframe width="52%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/296871945&amp;color=%231a201d&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
+            <iframe width="52%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240575934&amp;color=%231a201d&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>                  
+            <iframe width="52%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240582678&amp;color=%231a201d&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
+            <iframe width="52%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240586043&amp;color=%231a201d&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe> 
+            <iframe width="52%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/217441614&amp;color=%231a201d&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
+            <iframe width="52%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214866211&amp;color=%231a201d&amp;inverse=false&amp;auto_play=false&amp;show_user=false"></iframe>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>niklas.ce.westman@gmail.com</h2>
+    </footer>
+
+    <!-- JS LINKS -->
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/text.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+// About page styles
+
+.aboutMain {
+    display: block;
+    text-align: center;
+    margin: 10% 35%;
+}
+
+.aboutFooter {
+    position: relative;
+    bottom: 0;
+    height: 4.5rem;
+    text-align: center;
+  }
+
+@media screen and (max-width: 1600px) {
+
+      
+  }
+  
+  @media screen and (max-width: 1024px) {
+  
+    .aboutMain {
+        display: block;
+        text-align: center;
+        margin: 5% 15%;
+    }
+
+    .aboutFooter {
+        position: relative;
+        bottom: 0;
+        height: 14.5rem;
+      }
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    
+  
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+      
+  }
